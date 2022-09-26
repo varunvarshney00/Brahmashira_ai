@@ -1,0 +1,111 @@
+{
+    "intents":[
+        {
+            "tag":"greeting",
+            "patterns":["hello", "hii", "hey", "wake up", "jarvis", "are you there"
+            ],
+            "responses":["Hello sir", "How are you sir?", "Always for you sir", "Hello", "Here's your assistant sir."
+            ]
+        },
+        {
+            "tag":"bye",
+            "patterns":["bye", "good bye", "see you later", "sleep", "exit", "see you soon"
+            ],
+            "responses":["bye sir", "I am going sir?", "it was nice to meet you sir", "see you later", "i will miss you sir."
+            ]
+        },
+        {
+            "tag":"health",
+            "patterns":["how are you", "hey there", "are you fine?", "are you good?", "how you doing?", "howdy"
+            ],
+            "responses":["Fine", "Perfect", "Cool", "I am fine, what about you?", "Just OK"
+            ]
+        },
+        {
+            "tag":"identity ",
+            "patterns":["Your name", "What is your name", "who are you", "what are you", "how you doing?", "howdy"
+            ],
+            "responses":["Brahmashira", "i am Brahmashira", "An A.I.assistant", "I don't want to tell you", "Fukk off"
+            ]
+        },
+        {
+            "tag":"time",
+            "patterns":["time", "what is the time", "current time", "exact time", "tell time", "what's the time", "samay"
+            ],
+            "responses":["time"
+            ]
+        },
+        {
+            "tag":"date",
+            "patterns":["date", "what is the date", "current date", "exact date", "tell date", "what's the date", "tareek"
+            ],
+            "responses":["date"
+            ]
+        },
+        {
+            "tag":"day",
+            "patterns":["day", "what is the day", "current day", "exact day", "tell day", "what's the day", "din"
+            ],
+            "responses":["day"
+            ]
+        },
+        {
+            "tag":"wikipedia",
+            "patterns":["who is", "tell me about", "what is the", "wikipedia", "can you explain about", "explain", "tell me more"
+            ],
+            "responses":["wikipedia"
+            ]
+        },
+        {
+            "tag":"google",
+            "patterns":["who is", "tell me about", "what is the", "google", "google", "search", "google search"
+            ],
+            "responses":["google"
+            ]
+        },
+        {
+            "tag":"notepad",
+            "patterns":["open notepad", "notepad", "start notepad", "please open notepad"
+            ],
+            "responses":["notepad"
+            ]
+        },
+        {
+            "tag":"command prompt",
+            "patterns":["open command prompt", "command prompt", "start command prompt", "please open command prompt","open cmd", "cmd", "start"
+            ],
+            "responses":["command prompt"
+            ]
+        },
+        {
+            "tag":"camera",
+            "patterns":["open camera", "camera", "start camera", "please open camera"
+            ],
+            "responses":["camera"
+            ]
+        },
+        {
+            "tag":"music",
+            "patterns":["open music", "music", "start music", "please open music"
+            ],
+            "responses":["music"
+            ]
+        },
+        {
+            "tag":"ip address",
+            "patterns":["open ip address", "ip address", "start ip address", "please open ip address", "give ip address", "ip address", "please give my ip address"
+            ],
+            "responses":["ip address"
+            ]
+        },
+        {
+            "tag":"youtube",
+            "patterns":["who is youtube", "tell me about youtube", "according to youtube", "search on youtube", "youtube", "youtube search"
+            ],
+            "responses":["youtube"
+            ]
+        }
+    ]
+    
+}
+        
