@@ -6,6 +6,8 @@ import cv2
 import random
 from requests import get
 import webbrowser
+import requests
+from bs4 import BeautifulSoup
 
 # FUNCTION
 
@@ -57,6 +59,18 @@ def Ip():
 def Youtube():
     webbrowser.open("www.youtube.com")
 
+def Weather():
+    searching = "temperature in bangalore"
+    url = f"https://www.google.com/search?q={searching}"
+    r = requests.get(url)
+    data = BeautifulSoup(r.text, "html.parser")
+    temp = data.find("div", class_="BNeawe").text
+    Say(f"current {searching} is {temp}")
+
+def Google():
+    webbrowser.open("www.google.com")
+
+
 def NonInputExecution(query):
 
     query = str(query)
@@ -90,6 +104,9 @@ def NonInputExecution(query):
 
     elif "google" in query:
         Google()
+
+    elif "temperature" in query:
+        Weather()
     
 
 # 2 - INPUT
@@ -103,8 +120,8 @@ def InputExecution(tag, query):
         Say("according to wikipedia")
         Say(result)
 
-    elif "google" in tag:
-        query = str(query).replace("google","")
-        query = query.replace("search","")
-        import pywhatkit
-        pywhatkit.search(query)
+    # elif "google" in tag:
+    #     query = str(query).replace("google","")
+    #     query = query.replace("search","")
+    #     import pywhatkit
+    #     pywhatkit.search(query)

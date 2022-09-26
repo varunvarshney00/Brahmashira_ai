@@ -104,6 +104,13 @@
             ],
             "responses":["youtube"
             ]
+        },
+        {
+            "tag":"temperature",
+            "patterns":["who is temperature", "tell me about temperature", "according to temperature", "search on temperature", "temperature", "temperature search", "what is the temperature"
+            ],
+            "responses":["temperature"
+            ]
         }
     ]
     

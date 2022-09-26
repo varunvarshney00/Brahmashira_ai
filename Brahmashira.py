@@ -7,6 +7,7 @@ from Brain import NeuralNet
 from NeuralNetwork import bag_of_words, tokenize
 import os
 import random
+import requests 
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 with open("intents.json", 'r') as json_data:
@@ -73,7 +74,7 @@ def Main():
                 elif "wikipedia" in reply:
                     InputExecution(reply, result)
 
-                elif "google" in reply:
+                elif "Google" in reply:
                     InputExecution(reply, result)
 
                 elif "notepad" in reply:
@@ -92,6 +93,12 @@ def Main():
                     NonInputExecution(reply)
 
                 elif "youtube" in reply:
+                    NonInputExecution(reply)
+
+                elif "Google" in reply:
+                    NonInputExecution(reply)
+
+                elif "temperature" in reply:
                     NonInputExecution(reply)
 
                 else:
